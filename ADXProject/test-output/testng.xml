@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="Suite" parallel="tests">
+<!--suite  name="Suite" parallel="methods"-->
+<!--suite  name="Suite" parallel="classes"-->
+  <test name="FirefoxTest">
+  <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="com.adx.qa.pages.CrossBrowserTest">
+      </class> 
+    </classes>  
+  </test> 
+  <test name="IETest">
+ <parameter name="browser" value="ie" />
+   <classes>
+      <class name="com.adx.qa.pages.CrossBrowserTest">
+      </class> 
+    </classes>
+  </test> 
+</suite> 
+
+<!-- How to exclude a particular test method from a test case execution? --> 
+<!-- <classes>
+  <class name="TestCaseName">
+     <methods>
+       <exclude name="TestMethodNameToExclude"/>
+     </methods>
+  </class>      
+</classes>
+ -->
