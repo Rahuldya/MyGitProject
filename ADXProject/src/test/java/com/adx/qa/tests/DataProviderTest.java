@@ -20,11 +20,12 @@ public class DataProviderTest extends PageGeneric {
 	@Test(dataProvider="authentication")
 	public void test(String username,String password)
 	{
-		initialiaztion();
+		
+		 initialiaztion();
 		 dp=new DataProviderMain();
 		 dp.logintest(username, password);
 		
-		System.out.println(username);
+		
 	}
 
 }

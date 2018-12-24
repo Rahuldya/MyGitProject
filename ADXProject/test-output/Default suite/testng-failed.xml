@@ -3,11 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.adx.qa.tests.DataProviderTest">
+      <class name="com.adx.qa.tests.LoginTestPage">
         <methods>
-          <include name="test" invocation-numbers="0 1"/>
+          <include name="checkImage"/>
+          <include name="loginToPage"/>
+          <include name="tearDown"/>
+          <include name="checkTitle"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.adx.qa.tests.DataProviderTest -->
+      </class> <!-- com.adx.qa.tests.LoginTestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

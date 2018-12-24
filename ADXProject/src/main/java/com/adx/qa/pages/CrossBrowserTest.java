@@ -31,7 +31,8 @@ public class CrossBrowserTest {
 	 
 	  // If browser is IE, then do this	  
 	 
-	  }else if (browser.equalsIgnoreCase("ie")) { 
+	  }
+	  if (browser.equalsIgnoreCase("ie")) { 
 	 
 	   // Here I am setting up the path for my IEDriver
 	 
@@ -59,7 +60,7 @@ public class CrossBrowserTest {
 	    driver.findElement(By.id("login")).click();
 	 
 	 }  
-	  @Test(groups={"Car"})
+	/*  @Test(groups={"Car"})
 	  public void test1()
 	  {
 		  System.out.println("Hello This is Car group test1");
@@ -76,7 +77,7 @@ public class CrossBrowserTest {
 	  {
 		  System.out.println("Hello This is Car group test3");
 	  }
-	  
+	 */ 
 	  @AfterClass 
 	  public void afterTest() {
 	 

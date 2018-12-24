@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="IETest(failed)" parallel="tests">
-    <parameter name="browser" value="ie"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.adx.qa.pages.CrossBrowserTest">
+      <class name="com.adx.qa.tests.LoginTestPage">
         <methods>
-          <include name="login"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="checkImage"/>
+          <include name="loginToPage"/>
+          <include name="tearDown"/>
+          <include name="checkTitle"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.adx.qa.pages.CrossBrowserTest -->
+      </class> <!-- com.adx.qa.tests.LoginTestPage -->
     </classes>
-  </test> <!-- IETest(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
