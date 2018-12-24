@@ -1,0 +1,34 @@
+In our project 
+
+langualage ---> Java
+Script     ---> Selenium WebDriver
+parllel execution/Report--->testng
+build--->maven
+execel sheet data access-->Apache POI
+commit-->GitHUb
+for run batch job--->jenkins
+
+
+run from command prompt
+
+1)
+
+>>set classpath C:\workspace\Jenkins\bin;C:\workspace\Jenkins\lib\*;
+
+>>java org.testng.TestNG testng.xml
+
+
+2)
+from Jenkins:
+
+java -cp bin;lib/* org.testng.TestNG testng.xml----->save that file in name of "run.bat"
+
+after this run.bat file is created run that file 
+
+
+
+3) Now run that run.bat file from jenkins so for that we need to follow below step
+	a) set path in jenkins  where that "run.bat" file is present
+
+	b) run that jenkins build in tha name of "execute build on batch file"
+

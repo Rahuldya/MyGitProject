@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.063 sec <<< FAILURE!
+test(com.adx.qa.tests.DataProviderTest)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.adx.qa.base.PageGeneric.initialiaztion(PageGeneric.java:40)
+	at com.adx.qa.tests.DataProviderTest.test(DataProviderTest.java:24)
+
+test(com.adx.qa.tests.DataProviderTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.adx.qa.base.PageGeneric.initialiaztion(PageGeneric.java:40)
+	at com.adx.qa.tests.DataProviderTest.test(DataProviderTest.java:24)
+
