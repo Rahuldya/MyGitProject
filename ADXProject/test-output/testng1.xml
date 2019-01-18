@@ -8,7 +8,7 @@
   </run>
   </groups>
     <classes>
-      <class name="com.adx.qa.tests.Grouping">
+      <class name="com.adx.qa.tests.HomeTestPage">
       </class> 
     </classes>  
   </test> 

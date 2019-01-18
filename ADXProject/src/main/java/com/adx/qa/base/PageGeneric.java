@@ -21,7 +21,7 @@ public class PageGeneric {
 	{
 		prop = new Properties();
 		try {
-			FileInputStream	fis = new FileInputStream("C:\\Users\\eyyvrrl\\workspace\\ADXProject\\src\\main\\java\\com\\adx\\qa\\envVariable\\config.properties");
+			FileInputStream	fis = new FileInputStream("C:\\Users\\eyyvrrl\\GitRepDir1\\ADXProject\\src\\main\\java\\com\\adx\\qa\\envVariable\\config.properties");
 			prop.load(fis);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

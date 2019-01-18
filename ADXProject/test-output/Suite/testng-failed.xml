@@ -13,4 +13,16 @@
       </class> <!-- com.adx.qa.pages.CrossBrowserTest -->
     </classes>
   </test> <!-- IETest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.adx.qa.pages.CrossBrowserTest">
+        <methods>
+          <include name="login"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.adx.qa.pages.CrossBrowserTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
