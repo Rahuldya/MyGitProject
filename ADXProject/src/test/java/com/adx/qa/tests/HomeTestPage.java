@@ -26,7 +26,13 @@ public class HomeTestPage extends PageGeneric {
 	{
 		initialiaztion();
 		lpage=new LoginPage();
-		hpage=lpage.login(prop.getProperty("username"), prop.getProperty("password"));	
+			
+	}
+	
+	@Test(priority=1)
+	public void verfyLoginPage()
+	{
+		hpage=lpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@Test
@@ -36,7 +42,6 @@ public class HomeTestPage extends PageGeneric {
 		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service","Not able to login Home Page");
 	}
 	
-
 	
 	@AfterMethod
 	public void tearDown()
